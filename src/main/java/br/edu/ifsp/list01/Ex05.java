@@ -1,5 +1,6 @@
 package br.edu.ifsp.list01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -27,13 +28,41 @@ public class Ex05 {
     public static void main(String[] args) {
         //Leia o input
         Scanner scanner =new Scanner(System.in);
+
+        System.out.println("limite L:");
+        int limite = scanner.nextInt();
+
+        System.out.println("Valor da multa:");
+        double multa = scanner.nextDouble();
+
+        System.out.println("Valor adicional:");
+        double adicional = scanner.nextDouble();
+
+        System.out.println("velocidade:");
+       int  velocidade = scanner.nextInt();
+
         //Crie uma variável do tipo deste arquivo. Exemplo: Ex02 ex = new Ex02();
+        Ex05 ex = new Ex05();
         //Escreva o resultado da chamada do método compute() aqui
+        String result ;
+          result = ex.compute(limite,multa, adicional,velocidade);
+      //  System.out.printf("Resultado: %.2f\n", result);
+        String resul = result.replace(",",".");
+        System.out.printf("%.2f", Double.parseDouble(resul));
+
+
     }
 
     String compute(int L, double m, double a, int v) {
-        String output =  null;
-        //put your logic here
-        return output;
+         int acimaDoLimite =  acimaDoLimite = v - L;;
+          if(v > L){
+              m += acimaDoLimite * a;
+              return String.format("%.2f", m);
+          }
+         return "0.00";
+
+
+
+
     }
 }

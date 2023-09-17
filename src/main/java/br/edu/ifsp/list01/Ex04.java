@@ -29,7 +29,7 @@ public class Ex04 {
         System.out.println("preco = ") ;
         int preco = scanner.nextInt();
 
-        System.out.println("Embalagem = " + preco);
+        System.out.println("Embalagem = " );
         int embalagem = scanner.nextInt();
 
 
@@ -52,10 +52,9 @@ public class Ex04 {
 
             while(trocou >= embalagem) {
                chocolateTrocado = trocou / embalagem;
-                sobra = trocou % embalagem;
+               // sobra = trocou % embalagem;
                 qtdeTotalChocolate += chocolateTrocado;
                 trocou =   chocolateTrocado + ( trocou % embalagem);
-
 
             }
 
