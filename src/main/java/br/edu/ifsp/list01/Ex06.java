@@ -60,6 +60,6 @@ public class Ex06 {
 
          return String.format("%.0fgit  %.2f",  Math.ceil(qtdeTinta) ,custoTotal).replace(",",".") ;
 
-       //return Math.ceil(qtdeTinta) + " custo total " + custoTotalString;
+        //return Math.ceil(qtdeTinta) + " custo total " + custoTotalString;
     }
 }
