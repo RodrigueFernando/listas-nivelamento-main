@@ -48,7 +48,7 @@ public class Ex05 {
           result = ex.compute(limite,multa, adicional,velocidade);
       //  System.out.printf("Resultado: %.2f\n", result);
         String resul = result.replace(",",".");
-        System.out.printf("%.2f", Double.parseDouble(resul));
+        System.out.printf("%.2f",Double.parseDouble(resul));
 
 
     }
